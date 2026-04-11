@@ -22,11 +22,17 @@ const NoteDetailsClient = () => {
     : `Created at: ${note.createdAt}`;
 
   return (
-    <div>
-      <h2>{note.title}</h2>
-      <p>{note.content}</p>
-      <p>{formattedDate}</p>
-    </div>
+   <div className={css.container}>
+	<div className={css.item}>
+	  <div className={css.header}>
+	    <h2>Note title</h2>
+	  </div>
+      <p className={css.tag}>{note.tag}</p>
+	  <p className={css.content}>Note content</p>
+	  <p className={css.date}>Created date</p>
+	</div>
+</div>
+
   );
 };
 
