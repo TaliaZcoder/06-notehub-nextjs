@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { Note } from "../types/note";
+import type { NoteTag } from "../types/note";
 
 export type Note = {
   id: string;
