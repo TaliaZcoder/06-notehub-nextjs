@@ -33,7 +33,7 @@ export default function NoteList({ notes }: NoteListProps) {
             <span className={css.tag}>{note.tag}</span>
             
             <Link href={`/notes/${note.id}`}>
-              <a className={css.link}>View details</a>
+              View details
             </Link>
 
             <button
